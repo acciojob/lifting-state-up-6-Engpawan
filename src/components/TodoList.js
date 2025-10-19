@@ -9,8 +9,9 @@ const TodoList = ({ todos, handleComplete }) => {
           <li key={todo.id}>
             <span
               style={{
-                textDecoration: todo.completed ? "" : "none",
+                textDecoration: todo.completed ? "complete" : "completed",
               }}
+              
             >
               {todo.text}
             </span>
